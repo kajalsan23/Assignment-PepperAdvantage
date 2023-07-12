@@ -1,0 +1,109 @@
+.login-container{
+  background-image: linear-gradient(#df0024, #411941);
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+ padding: 50px 80px;
+  border-radius: 4px;
+  gap: 30px;
+  max-width: 450px;
+  background-color: #f9f9f9;
+}
+
+img{
+  margin-bottom: 20px;
+  Width:303.62px;
+  Height:41.77px
+}
+
+h1 {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+p {
+    width: Fill (304.5px);
+    height: Hug (15px);
+    gap: 20px;
+    font-size: 12px;
+}
+
+.text{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #002841;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+
+  }
+  
+  button:hover {
+    opacity: 0.8;
+    background-color: #002841;
+  }
+  
+  .alert-danger {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+
+.container img {
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+}

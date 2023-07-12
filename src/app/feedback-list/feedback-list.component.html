@@ -1,0 +1,20 @@
+<app-header></app-header>
+<div class="main-content">
+  <h6>welcome back User 01!</h6>
+
+  <div class="content">
+    <div>Feedack List</div>
+    <div><span (click)="add()"><i class="bi bi-plus"></i>Add New</span></div>
+  </div>
+
+  <div class="card" *ngFor="let item of ListData">
+    <div class="card-body">
+      <div><img src="/assets/Icons.png" alt="icon" class="img-fluid">
+      </div>
+      <div class="col-md-9 text">{{ item.feedback }}</div>
+      <div class="col-md-1"><ngb-rating [(rate)]="item.rating" [readonly]="true" [max]="5"></ngb-rating></div>
+      <div class="col-md-1">{{item.date}}</div>
+     
+    </div>
+  </div>
+</div>

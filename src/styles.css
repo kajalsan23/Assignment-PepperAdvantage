@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+ngb-rating {
+    color: #FFD600;
+    font-size: 24px;
+    line-height: 20px;
+  }
+  
+  .star {
+    position: relative;
+    display: inline-block;
+    font-size: 3rem;
+    color: #d3d3d3;
+  }
+  .full {
+    color: #FFD600;
+  }
+  .half {
+    position: absolute;
+    display: inline-block;
+    overflow: hidden;
+    color: #FFD600;
+  }

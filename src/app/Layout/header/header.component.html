@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <a class="nav-link">
+            <span class="navbar-toggler-icon" (click)="onToggleSidenav()"></span>
+          </a> 
+          <a class="nav-link" href="#">
+            <img src="/assets/Logo.png" height="20px" alt="Logo">
+          </a>
+        </ul>
+        <div class="d-flex">
+
+          <a class="nav-link" href="#">
+            <i class="bi bi-question-circle"></i>
+          </a>
+
+          <a class="nav-link" href="#">
+            <i class="bi bi-bell"></i>
+          </a>
+
+            <a class="nav-link" (click)="backtoPage()">
+                <img src="/assets/profile.jpg" alt="Profile Picture" class="profile-pic">
+              </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <ng-container>
+    <div class="sidenav" *ngIf="this.isShow">
+      <!-- Add your sidenav content here -->
+      <div class="Head">
+        <a class="nav-link" href="#">
+          <img src="/assets/Logo.png" height="20px" alt="Logo">
+        </a>
+        <i class="bi bi-x-lg" (click)="onToggleSidenav()"></i>
+      </div>
+      <hr>
+      <div class="sideLabel mt-3"> <img src="/assets/Home.png" height="20px" alt="Logo"><label for="home">Home</label>
+      </div>
+    </div>
+    
+  </ng-container>

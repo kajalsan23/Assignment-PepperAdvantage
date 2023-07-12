@@ -1,0 +1,45 @@
+<app-header></app-header>
+<div class="content">
+  <div class="heading">
+    <div class="title">Add New Feedback</div>
+    <div class="rightCornerText">Home / <span style="color: #df0024;">Feedback Form</span></div>
+  </div>
+
+  <label class="text"><h6>Feedback Form</h6></label>
+
+  <form #myForm="ngForm" (ngSubmit)="submit(myForm)">
+    <div class="form-group">
+      <label for="feedback"><b>Feedback Input</b></label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Lorem"
+        name="feedback"
+        required
+        minlength="5"
+        [(ngModel)]="feedback"
+      />
+      <!-- <div
+        *ngIf="feedback.invalid && (feedback.dirty || feedback.touched)"
+        class="alert alert-danger"
+      >
+        <div *ngIf="feedback.errors && feedback.errors.hasOwnProperty('required')">
+          feedback is required.
+        </div>
+        <div *ngIf="feedback.errors && feedback.errors.hasOwnProperty('minlength')">
+          name should be at least 10 characters long.
+        </div>
+      </div> -->
+    </div>
+
+    <div class="form-group">
+      <label for="rating"><b>Rating</b></label><br>
+      <ngb-rating name="rating" [max]=5 [(rate)]="rating" [(ngModel)]="rating"></ngb-rating>
+    </div>
+
+    <div class="button">
+      <button type="reset" class="btn backbtn">Back</button>
+      <button type="submit" class="btn savebtn">Submit</button>
+    </div>
+  </form>
+</div>

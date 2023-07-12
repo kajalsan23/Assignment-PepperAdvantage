@@ -1,0 +1,73 @@
+.navbar-brand {
+  margin-right: 15px;
+}
+
+.profile-pic {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* SideNav */
+.Head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: -48px;
+  padding: 7px;
+}
+
+.sideLabel{
+  background-color: #E0E0E0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+label{
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+color: #411941;
+}
+
+.sidenav {
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #f2f2f2;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.sidenav.open {
+  width: 250px;
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidenav li {
+  padding: 10px;
+}
+
+.sidenav a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.sidenav a:hover {
+  background-color: #ddd;
+}
+
+i {
+  margin: 12px;
+  font-size: 18px;
+}
